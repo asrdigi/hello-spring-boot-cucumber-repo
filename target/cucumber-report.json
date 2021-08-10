@@ -1,0 +1,147 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6283200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "WITH ALL REQUIRED FIELDS IS SUCCESSFUL",
+        "description": "",
+        "id": "create-employee;with-all-required-fields-is-successful",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 164091100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user wants to create an employee with the following attributes",
+            "match": {
+              "location": "EmployeeSteps.java:23"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "firstName",
+                  "lastName",
+                  "dateOfBirth",
+                  "startDate",
+                  "employmentType",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "100",
+                  "Rachel",
+                  "Green",
+                  "1990-01-01",
+                  "2018-01-01",
+                  "Permanent",
+                  "rachel.green@fs.com"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1723000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "with the following phone numbers",
+            "match": {
+              "location": "EmployeeSteps.java:32"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "type",
+                  "isdCode",
+                  "phoneNumber",
+                  "extension"
+                ]
+              },
+              {
+                "cells": [
+                  "102",
+                  "Mobile",
+                  "+1",
+                  "2141112222",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "103",
+                  "Office",
+                  "+1",
+                  "8362223000",
+                  "333"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3131483800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user saves the new employee \u0027WITH ALL REQUIRED FIELDS\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027WITH ALL REQUIRED FIELDS\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "EmployeeSteps.java:39"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131776000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the save \u0027IS SUCCESSFUL\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027IS SUCCESSFUL\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "EmployeeSteps.java:49"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Employee",
+    "description": "",
+    "id": "create-employee",
+    "keyword": "Feature",
+    "uri": "features/100-create-employee.feature",
+    "tags": []
+  }
+]
