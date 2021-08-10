@@ -18,20 +18,23 @@ pipeline{
             }
         }
         
-        stage('Maven Build') { 
-            steps {
-                bat "mvn install"
-            }
-        }
+        
 
-        stage ('Cucumber Reports') {
+        
+         stage('Generate HTML report') {
+        			cucumber buildStatus: 'UNSTABLE',
+                		reportTitle: 'My report',
+                		fileIncludePattern: '**/*.json',
+               			trendsLimit: 10,
+                		classifications: [
+                    		[
+                        		'key': 'Browser',
+                        		'value': 'Firefox'
+                    		]
+                		]
+              }
 
-            steps {
-                cucumber buildStatus: "UNSTABLE",
-                    fileIncludePattern: "**/cucumber.json",
-                    jsonReportDirectory: 'target'
-
-            }
+           }
 
         }
 
