@@ -35,7 +35,7 @@ pipeline{
                 		classifications: [
                     		[
                         		'key': 'Browser',
-                        		'value': 'Firefox'
+                        		'value': 'Chrome'
                     		]
                 		]
                   }
